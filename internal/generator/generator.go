@@ -334,9 +334,17 @@ func (g *generator) runNotifyCmd(config config.Config) {
 
 func (g *generator) sendSignalToContainer(containerID string, signal int) {
 	log.Printf("Sending container '%s' signal '%v'", containerID, signal)
+
+	if signal == -1 {
+		if err := g.Client.RestartContainer(containerID, 10); err != nil {
+			log.Printf("Error sending restarting container: %s", err)
+		}
+		return
+	}
+
 	killOpts := docker.KillContainerOptions{
 		ID:     containerID,
-		Signal: signal,
+		Signal: docker.Signal(signal),
 	}
 	if err := g.Client.KillContainer(killOpts); err != nil {
 		log.Printf("Error sending signal to container: %s", err)
