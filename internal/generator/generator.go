@@ -332,7 +332,7 @@ func (g *generator) runNotifyCmd(config config.Config) {
 	}
 }
 
-func (g *generator) sendSignalToContainer(containerID string, signal docker.Signal) {
+func (g *generator) sendSignalToContainer(containerID string, signal int) {
 	log.Printf("Sending container '%s' signal '%v'", containerID, signal)
 	killOpts := docker.KillContainerOptions{
 		ID:     containerID,
