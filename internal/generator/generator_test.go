@@ -15,9 +15,9 @@ import (
 
 	docker "github.com/fsouza/go-dockerclient"
 	dockertest "github.com/fsouza/go-dockerclient/testing"
-	"github.com/nginx-proxy/docker-gen/internal/config"
-	"github.com/nginx-proxy/docker-gen/internal/context"
-	"github.com/nginx-proxy/docker-gen/internal/dockerclient"
+	"github.com/dominikurban/docker-gen/internal/config"
+	"github.com/dominikurban/docker-gen/internal/context"
+	"github.com/dominikurban/docker-gen/internal/dockerclient"
 )
 
 func TestGenerateFromEvents(t *testing.T) {

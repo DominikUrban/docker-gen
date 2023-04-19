@@ -1,4 +1,4 @@
-module github.com/nginx-proxy/docker-gen
+module github.com/dominikurban/docker-gen
 
 go 1.19
 

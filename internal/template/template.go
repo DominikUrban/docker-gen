@@ -19,9 +19,9 @@ import (
 	"unicode"
 
 	sprig "github.com/Masterminds/sprig/v3"
-	"github.com/nginx-proxy/docker-gen/internal/config"
-	"github.com/nginx-proxy/docker-gen/internal/context"
-	"github.com/nginx-proxy/docker-gen/internal/utils"
+	"github.com/dominikurban/docker-gen/internal/config"
+	"github.com/dominikurban/docker-gen/internal/context"
+	"github.com/dominikurban/docker-gen/internal/utils"
 )
 
 func getArrayValues(funcName string, entries interface{}) (*reflect.Value, error) {

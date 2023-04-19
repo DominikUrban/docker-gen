@@ -12,11 +12,11 @@ import (
 	"time"
 
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/nginx-proxy/docker-gen/internal/config"
-	"github.com/nginx-proxy/docker-gen/internal/context"
-	"github.com/nginx-proxy/docker-gen/internal/dockerclient"
-	"github.com/nginx-proxy/docker-gen/internal/template"
-	"github.com/nginx-proxy/docker-gen/internal/utils"
+	"github.com/dominikurban/docker-gen/internal/config"
+	"github.com/dominikurban/docker-gen/internal/context"
+	"github.com/dominikurban/docker-gen/internal/dockerclient"
+	"github.com/dominikurban/docker-gen/internal/template"
+	"github.com/dominikurban/docker-gen/internal/utils"
 )
 
 type generator struct {

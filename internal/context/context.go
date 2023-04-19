@@ -8,7 +8,7 @@ import (
 	"sync"
 
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/nginx-proxy/docker-gen/internal/utils"
+	"github.com/dominikurban/docker-gen/internal/utils"
 )
 
 var (

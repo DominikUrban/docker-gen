@@ -11,8 +11,8 @@ import (
 
 	"github.com/BurntSushi/toml"
 	docker "github.com/fsouza/go-dockerclient"
-	"github.com/nginx-proxy/docker-gen/internal/config"
-	"github.com/nginx-proxy/docker-gen/internal/generator"
+	"github.com/dominikurban/docker-gen/internal/config"
+	"github.com/dominikurban/docker-gen/internal/generator"
 )
 
 type stringslice []string
@@ -69,7 +69,7 @@ Environment Variables:
   DOCKER_CERT_PATH - directory path containing key.pem, cert.pem and ca.pem
   DOCKER_TLS_VERIFY - enable client TLS verification
 `)
-	println(`For more information, see https://github.com/nginx-proxy/docker-gen`)
+	println(`For more information, see https://github.com/dominikurban/docker-gen`)
 }
 
 func loadConfig(file string) error {

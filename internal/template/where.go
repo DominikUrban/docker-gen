@@ -5,7 +5,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/nginx-proxy/docker-gen/internal/context"
+	"github.com/dominikurban/docker-gen/internal/context"
 )
 
 // Generalized where function

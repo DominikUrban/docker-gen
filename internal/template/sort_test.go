@@ -3,7 +3,7 @@ package template
 import (
 	"testing"
 
-	"github.com/nginx-proxy/docker-gen/internal/context"
+	"github.com/dominikurban/docker-gen/internal/context"
 	"github.com/stretchr/testify/assert"
 )
 
